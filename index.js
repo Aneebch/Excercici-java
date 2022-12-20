@@ -47,5 +47,22 @@ function toOnlyStringArray (array) {
   }
   return soloString
 }
+// let result = (toOnlyStringArray(array))
+// console.log(result)
 
-console.log(toOnlyStringArray(array))
+//Dado un array de strings imprime un array de solamente los strings que empiezan por ‘a’.
+// hacer funcion
+
+let manyAnimals = [ "raton", 'aguila', 'perro', 'araña', 'leon', 'alpaca']
+
+function selectOnlyStringWithA(stringList) {
+  let startWithA = []
+  stringList.forEach(element => {
+    if (element[0] == "a"){
+      startWithA.push(element);
+    }
+  });
+  return startWithA;
+}
+
+console.log(selectOnlyStringWithA(manyAnimals));
