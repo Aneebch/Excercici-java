@@ -22,3 +22,30 @@ for (const number of numbersList) {
   }
 }
 
+// Ddao un array de numerso y strings imprime un array de solamente los strings.
+
+// let soloString = []
+
+// for  (let i = 0; i < array.length; i++) {
+  //   if (typeof array[i] == "string") {
+    //     soloString.push(array[i])
+    //   }
+    // }
+
+    // console.log(`los string son: ${soloString}`)
+
+
+
+// Ddao un array de numerso y strings imprime un array de solamente los strings.
+let array = [4, 'casa', 8, 'perro', 'amiga', 'como', 'yes', 'beach']
+function toOnlyStringArray (array) {
+  let soloString = [];
+  for (let item of array){
+    if (typeof item == "string") {
+      soloString.push (item)
+    }
+  }
+  return soloString
+}
+
+console.log(toOnlyStringArray(array))
